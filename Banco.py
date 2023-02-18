@@ -15,7 +15,7 @@ class Operacoes:
     def depositar(valor_deposito):
         global saldo
         saldo += valor_deposito
-        print(f'O valor de R$ {valor_deposito} foi adicionado à sua conta')
+        print(f'O valor de R$ {valor_deposito:.2f} foi adicionado à sua conta')
 
     def sacar(valor_saque):
         global saques_por_dia
@@ -32,14 +32,14 @@ class Operacoes:
             saldo -= valor_saque
             saques_por_dia = saques_por_dia - 1
             lista_saques.append(valor_saque)
-            print(f'O valor de R$ {valor_saque} foi retirado da sua conta')
+            print(f'O valor de R$ {valor_saque:.2f} foi retirado da sua conta')
 
     def extrato():
         global saldo
         global lista_saques
 
         print('Extrato')
-        print(f'Saldo: R$ {saldo}')
+        print(f'Saldo: R$ {saldo:.2f}')
         print('Histórico de Saldos:')
         for valores in lista_saques:
-            print(f'Saque de: {valores}')
+            print(f'Saque de: {valores:.2f}')
