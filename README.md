@@ -1,2 +1,2 @@
 # bancoBasic
-Criando um Sistema Bancário com Python (Dio)
+Sistema Bancário com Python em desenvolvimento (Dio)
